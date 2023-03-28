@@ -59,3 +59,19 @@
   border-radius: 5px;
   margin-left: 40%;
 }
+
+.subrayar-3{
+  display: inline-block;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-radius: 5px;
+  margin-left: 41%;
+}
+
+.subrayar-2{
+  display: inline-block;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-radius: 5px;
+  margin-left: 39%;
+}
