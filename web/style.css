@@ -1,11 +1,12 @@
+
 .bg-hex-azul {
     background-color: #10316b;
-    background-image: linear-gradient(to bottom, #10316b, #42b4e0);
+    background-image: linear-gradient(to bottom, #0e2f68, #4ab7e2);
   }
 
 .bg-hex-naranja {
     background-color: #fdbe34;
-    background-image: linear-gradient(to right, #fdbe34, #eecb6a);
+    background-image: linear-gradient(to right, #fcbb2e, #eece76);
     border-radius: 3px;
   }
 
@@ -20,7 +21,7 @@
 
 .btn-card{
   float: right;
-  
+  margin-top: 20px;
 }
 
 .border-hex-naranja {
@@ -33,18 +34,28 @@
   font-size: 25px;
 }
 
-.animacion {
-  animation: gradient 2s ease infinite;
+
+.imagen_fondo{
+  position:absolute;
+  z-index: -1;
+  left: 4%;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-bottom-right-radius: 10%;
 }
 
-@keyframes gradient {
-  0% {
-    background-color: #fdbe34;
-  }
-  50% {
-    background-color: #e4ac33;
-  }
-  100% {
-    background-color: #eecb6a;
-  }
+.imagen_fondo-2{
+  position:absolute;
+  z-index: -1;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-bottom-left-radius: 10%;
+}
+
+.subrayar {
+  display: inline-block;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-radius: 5px;
+  margin-left: 40%;
 }
