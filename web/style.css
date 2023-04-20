@@ -11,12 +11,22 @@
   }
 
 .carousel {
-    padding: 20px;
-  } 
+  display: flex;
+  width: 100%;
+}
 
-.img-carousel{
-    max-width: 960px;
-    max-height: 540px;
+.carousel img {
+  flex: 0 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+.logo {
+  flex: 0 0 auto;
+  max-width: auto;
+  height: auto;
 }
 
 .btn-card{
@@ -35,6 +45,17 @@
 }
 
 
+.subrayar {
+  display: inline-block;
+  border-bottom: 2px solid;
+  border-color: #fdbe34;
+  border-radius: 5px;
+}
+
+.arreglo_carrusel{
+	margin-bottom: 100px;
+}
+
 .imagen_fondo{
   position:absolute;
   z-index: -1;
@@ -47,31 +68,19 @@
 .imagen_fondo-2{
   position:absolute;
   z-index: -1;
+  right: 5%;
   border-bottom: 2px solid;
   border-color: #fdbe34;
   border-bottom-left-radius: 10%;
+ }
+
+@media (max-width: 1450px) {
+
+.imagen_fondo{
+  display: none;
 }
 
-.subrayar {
-  display: inline-block;
-  border-bottom: 2px solid;
-  border-color: #fdbe34;
-  border-radius: 5px;
-  margin-left: 40%;
-}
-
-.subrayar-3{
-  display: inline-block;
-  border-bottom: 2px solid;
-  border-color: #fdbe34;
-  border-radius: 5px;
-  margin-left: 41%;
-}
-
-.subrayar-2{
-  display: inline-block;
-  border-bottom: 2px solid;
-  border-color: #fdbe34;
-  border-radius: 5px;
-  margin-left: 39%;
+.imagen_fondo-2{
+  display: none;
+ }
 }
