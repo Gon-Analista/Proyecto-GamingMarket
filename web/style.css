@@ -1,3 +1,8 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 .bg-hex-azul {
     background-color: #10316b;
@@ -13,6 +18,7 @@
 .carousel {
   display: flex;
   width: 100%;
+  padding-top: 14px;
 }
 
 .carousel img {
@@ -20,6 +26,14 @@
   max-width: 100%;
   height: auto;
   margin-right: 10px;
+}
+
+.carousel-item{
+  font-size: 17px;
+}
+
+.carousel-item h5{
+  font-size: 23px;
 }
 
 
@@ -39,9 +53,15 @@
   border-color: #fdbe34;
 }
 
+.border-hex-negro {
+  border: 2px solid;
+  border-color: black
+}
+
 .pincel-tamaño{
   color: white;
   font-size: 25px;
+  padding-top: 15px;
 }
 
 
@@ -73,6 +93,29 @@
   border-color: #fdbe34;
   border-bottom-left-radius: 10%;
  }
+
+footer {
+  margin-top: 3%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+footer h4{
+  font-size: 20px;
+}
+
+footer p{
+  margin-bottom: 0.4em;
+}
+
+hr {
+  margin-top: -20px;
+}
+
+
+.sign-in-log-in{
+  font-size: 17px;
+}
 
 @media (max-width: 1450px) {
 
