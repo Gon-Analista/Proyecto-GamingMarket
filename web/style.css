@@ -80,6 +80,7 @@ body{
   position:absolute;
   z-index: -1;
   left: 4%;
+  margin-top: 50px;
   border-bottom: 2px solid;
   border-color: #fdbe34;
   border-bottom-right-radius: 10%;
@@ -88,7 +89,8 @@ body{
 .imagen_fondo-2{
   position:absolute;
   z-index: -1;
-  right: 5%;
+  right: 4%;
+  margin-top: 50px;
   border-bottom: 2px solid;
   border-color: #fdbe34;
   border-bottom-left-radius: 10%;
@@ -117,7 +119,7 @@ hr {
   font-size: 17px;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1360px) {
 
 .imagen_fondo{
   display: none;
