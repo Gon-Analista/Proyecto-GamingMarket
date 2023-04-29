@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- Pagina desarrollada por Gonzalo Ulloa y Jonathan Castillo -->
     <title>Time warp Gaming</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +13,7 @@
   </head>
   <body class ="bg-hex-azul ">
     <nav class="navbar navbar-expand-md navbar-light bg-hex-naranja font-weight-bolder">
-        <a class="navbar-brand" href="Inicio.html">Inicio</a>
+        <a class="navbar-brand zoom" href="Inicio.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,48 +21,100 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto align-items-baseline">
             <li>
-                <a class="nav-link" href="Carrito.html"><img src="img/shopping-cart_icon-icons.com_56125.png" alt="Imagen del carrito" class="mr-1">Carrito</a>
+                <div class="container-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-cart zoom">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                   <div class="count-products">
+                    <span id="contador-productos">2</span>
+                   </div>
+                   <div class="container-cart-products hidden-cart">
+                    <div class="cart-product">
+                        <div class="info-cart-products">
+                            <span class="cantidad-producto-carrito">Cantidad: 1</span>
+                            <p class="titulo-producto-carrito">Pokémon Esmeralda CIB USA</p>
+                            <span class="carrito-producto-precio"> $189.990</span>
+                        </div>
+                        <div class="info-cart-products">
+                            <span class="cantidad-producto-carrito">Cantidad: 1</span>
+                            <p class="titulo-producto-carrito">Super Mario RPG</p>
+                            <span class="carrito-producto-precio"> $49.990</span>
+                        </div>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                          
+                    </div>
+                    <div class="cart-total">
+                        <h3>Total :</h3>
+                        <span class="total-a-pagar">$239.980</span>
+                        <button type="button" class="btn btn-primary zoom">Continuar Compra</button>
+                    </div>
+                   </div>
+        
+                </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+              <a class="nav-link dropdown-toggle zoom" href="#" id="categoriasDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categorias
               </a>
               <div class="dropdown-menu bg-hex-naranja" aria-labelledby="categoriasDropdown">
-                <a class="dropdown-item" href="Super_Nintendo.html">Super Nintendo</a>
-                <a class="dropdown-item" href="Gameboy_Advance.html">Gameboy Advance</a>
-                <a class="dropdown-item" href="Nintendo_64.html">Nintendo 64</a>
-                <a class="dropdown-item" href="Ps1.html">Play Station 1</a>
-                <a class="dropdown-item" href="Ps2.html">Play Station 2</a>
+                <a class="dropdown-item font-weight-bold" href="Super_Nintendo.html">Super Nintendo</a>
+                <a class="dropdown-item font-weight-bold" href="Gameboy_Advance.html">Gameboy Advance</a>
+                <a class="dropdown-item font-weight-bold" href="Nintendo_64.html">Nintendo 64</a>
+                <a class="dropdown-item font-weight-bold" href="Ps1.html">Play Station 1</a>
+                <a class="dropdown-item font-weight-bold" href="Ps2.html">Play Station 2</a>
               </div>
             </li>
             <li>
-                <a class="nav-link" href="Sign-in.html">Sign-In</a>
+                <a class="nav-link zoom"  href="Sign-in.html">Sign-In</a>
             </li>
             <li>
-                <a class="nav-link" href="Log-in.html">Log-In</a>
+                <a class="nav-link zoom" href="Log-in.html">Log-In</a>
             </li>
           </ul>
         </div>
     </nav>
     <p></p>
+    
     <div class="text-center">
-        <img src="img/logo_transparent 400.png" alt="logo">
+        <img class="logo pulse" src="img/logo_transparent 400.png" alt="logo">
         <img src="img/fondo-1.gif" class="imagen_fondo" alt="fondo-1">
         <img src="img/fondo-2.gif" class="imagen_fondo-2" alt="fondo-2">
-        <p class="font-weight-bolder pincel-tamaño "> Hecho por fanáticos para fanáticos.</p>
+        <p class="font-weight-bolder pincel-tamaño fade-in"> Hecho por fanáticos para fanáticos.</p>
         <p class="font-weight-bolder pincel-tamaño subrayar"> Juegos de Gameboy Advance!</p>
     </div>
-    <section class="container my-5 ">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered col-12 col-md-6">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="font-weight-bold">Juego añadido al carrito!</h5>
+                    <img src="img/cofre.gif" alt="cofre abriendose">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary mx-auto btn-aceptar" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container my-5 font-weight-bold">
         <div class="row mt-5">
             <div class="col-lg-4 mb-4">
                 <div class="card bg-hex-naranja border-hex-naranja">
                     <img src="img/GBA/bpg-pokemon-emerald.jpg" class="card-img-top" alt="juego 1">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Pokémon Esmeralda  USA CIB</h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $189.990</p> 
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero"> Genero : JRPG</p>
+                        <P class="stock"> Stock : 5 Unidades</P>
+                        <p class="precio"> Precio: $189.990</p> 
                     </div>
                 </div>
             </div>
@@ -70,9 +123,11 @@
                     <img src="img/GBA/bpg-pokemon-firered.jpg" class="card-img-top" alt="juego 2">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Pokémon Rojo Fuego USA </h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $105.990</p>
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero"> Genero : JRPG</p>
+                        <P class="stock"> Stock : 7 Unidades</P>
+                        <p class="precio"> Precio: $155.990</p> 
+      
                     </div>
                 </div>
             </div>
@@ -81,9 +136,10 @@
                   <img src="img/GBA/bpg-pokemon-ruby.jpg" class="card-img-top" alt="juego 3">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Pokémon Ruby CIB</h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $155.990</p>
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero">  Genero : JRPG</p>
+                        <P class="stock"> Stock : 9 Unidades</P>
+                        <p class="precio">Precio: $105.990</p> 
                     </div>
                 </div>
             </div>
@@ -92,20 +148,22 @@
                 <img src="img/GBA/Golden_Sun_(NA).jpg" alt="juego 4">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Golden Sun JAP</h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $65.990</p>
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero"> Genero : JRPG</p>
+                        <P class="stock"> Stock : 8 Unidades</P>
+                        <p class="precio"> Precio: $65.990</p> 
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 mb-4">
                 <div class="card bg-hex-naranja border-hex-naranja">
-                   <img src="img/GBA/Fire_Emblem_GBA_29.jpg" class="card-img-top"alt="juego 5">
+                   <img src="img/GBA/Fire_Emblem_GBA_29.png" class="card-img-top"alt="juego 5">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Fire Emblem:TBB</h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $85.990</p>
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero"> Genero : Tactical RPG</p>
+                        <P class="stock"> Stock : 3 Unidades</P>
+                        <p class="precio"> Precio: $89.990</p> 
                     </div>
                 </div>
             </div>
@@ -114,9 +172,11 @@
                     <img src="img/GBA/Harvest_Moon.jpg"  class="card-img-top"alt="juego 6">
                     <div class="card-body">
                         <h5 class="card-title text-center font-weight-bolder">Harvest Moon FMT USA</h5>
-                        <a href="#" class="btn btn-primary btn-card">Comprar</a>
-                        <p class="card-text">Consola: Gameboy Advance</p>
-                        <p class="card-text">Precio: $49.990</p>
+                        <button id="buy-btn" type="button" class="btn btn-primary btn-card zoom" data-toggle="modal" data-target="#exampleModal">Comprar</button>
+                        <p class="Genero"> Genero : Farming Simulator</p>
+                        <P class="stock"> Stock : 13 Unidades</P>
+                        <p class="precio"> Precio: $49.990</p> 
+                     
                     </div>
                 </div>
             
@@ -124,12 +184,11 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
+    <script src="JQuery.js"></script>
     <footer class="bg-hex-naranja py-4 font-weight-bolder text-dark">
         <div class="container">
             <div class="row">
