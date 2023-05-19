@@ -376,3 +376,26 @@ img{
   opacity: 1;
   visibility: visible;
 }
+
+
+@keyframes slideRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.slide-in-r {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide-in-r.active {
+  animation: slideRight 1s ease;
+  opacity: 1;
+  visibility: visible;
+}
