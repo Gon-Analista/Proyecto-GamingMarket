@@ -4,10 +4,11 @@ body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
 .bg-hex-azul {
     background-color: #10316b;
     background-image: linear-gradient(to bottom, #0e2f68, #4ab7e2);
-  }
+ }
 
 .bg-hex-naranja {
     background-color: #fdbe34;
@@ -299,6 +300,12 @@ img{
 }
 
 
+.fix-button {
+  position: absolute; 
+  right: 10px; 
+  top: 10px;
+}
+
 /*# Animaciones basicas css */
 
 .fade-in {
@@ -336,15 +343,36 @@ img{
 
 
 .pulse {
-  animation: pulse 2s infinite alternate;
+  animation: pulse 1.1s infinite alternate;
 }
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+      transform: scale(0.98);
   }
   100% {
       transform: scale(1.05);
   }
 }
 
+@keyframes slideDown {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide-in.active {
+  animation: slideDown 1s ease;
+  opacity: 1;
+  visibility: visible;
+}
