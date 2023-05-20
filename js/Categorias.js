@@ -19,23 +19,6 @@ btnCart.addEventListener('click', () => {
 
 
 
-$(window).scroll(function() {
-  checkVisibility('#contenido');
-});
-
-function checkVisibility(elementId) {
-  var scrollTop = $(window).scrollTop();
-  var windowHeight = $(window).height();
-  var elementOffset = $(elementId).offset().top;
-  var activatePosition = elementOffset - (windowHeight * 0.9);
-
-  if (scrollTop >= activatePosition) {
-    $(elementId).addClass('active');
-  }
-}
-
-
-
 
 
 
