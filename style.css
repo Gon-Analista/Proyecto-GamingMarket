@@ -310,6 +310,10 @@ img{
   top: 10px;
 }
 
+.fix-allign-total{
+  padding-bottom: 4px;
+}
+
 /*# Animaciones basicas css */
 
 .fade-in {

@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-const btnCart = document.querySelector('.container-icon')
+const btnCart = document.querySelector('.container-cart-icon')
 const containerCartProducts = document.querySelector('.container-cart-products')
 
 btnCart.addEventListener('click', () => {
